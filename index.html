@@ -1,0 +1,82 @@
+<head>
+    <title>Password Upgrader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Leszekk.eu" />
+    <meta property="og:title" content="Password Upgrader" />
+    <meta property="og:description" content="Password Upgrader allows you to improve the security of your password without giving up easy and liked words." />
+    <meta name="description" content="Password Upgrader allows you to improve the security of your password without giving up easy and liked words."/>
+</head>
+<body>
+    <div id="container">
+        <h1>Upgrade Your Password</h1>
+        <h5>Let your password be safer!</h5>
+        <div class="searchWrapper">
+            <input id="input" type="password" placeholder="type password here"/>
+            <button id="start">upgrade</button>
+        </div>
+        <div class="box">
+            <h2 id="info-pass">Enter the password above.</h2>
+            <input type="password" id="pass" class="dark password" readonly>
+            <div>
+                <img src="eye.svg" class="img" id="show-pass">
+                <img src="eye-slash.svg" class="img" id="hide-pass">
+                <img src="copy.svg" class="img" id="copy-pass">
+            </div>
+        </div>
+        <div id="settings" class="box">
+            <h2>Settings</h2>
+            <label>
+                <span class="checkspan">Upper Case</span>
+                <input type="checkbox" id="one" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label>
+                <span class="checkspan">Double Letter</span>
+                <input type="checkbox" id="two" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label>
+                <span class="checkspan">4 Digits Num</span>
+                <input type="checkbox" id="three" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label>
+                <span class="checkspan">End Symbol</span>
+                <input type="checkbox" id="four" checked>
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div id="info" class="box">
+            <h2>How it works?</h2>
+            <div id="more-btn">
+                <img src="ellipsis-h.svg" id="read-more">
+                <p id="read-more-p">Read More</p>
+            </div>
+            <div id="more">
+                <h3>Password Upgrader allows you to improve the security of your password without giving up easy and liked words.</h3>
+                <h3>Before: <span class="red">Name</span></h3>
+                <h3>After: <span class="green">NammE1383#</span></h3>
+                <h2>Benefits:</h2>
+                <li>easy and fast to use</li>
+                <li>safe</li>
+                <li>the password is not sent anywhere, it is processed by your browser</li>
+                <li>about 1 000% a more secure password</li>
+                <div id="powered2">
+                    <hr>
+                    <b id="powered2link">&copy; Leszekk.eu</b>
+                </div>
+                <hr>
+                <b id="close-info">Do not show again</b>
+            </div>
+        </div>
+    </div>
+    <img src="question-circle.svg" id="show-info">
+    <b id="powered">&copy; Leszekk.eu</b>
+</body>
